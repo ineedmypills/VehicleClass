@@ -6,13 +6,15 @@
 class Car : public Vehicle
 {
 public:
-	Car(double gas, int wheelsAmount, enum engineType, enum formFactor, bool spareTire);
+	Car(double gas, int wheelsAmount, EngineType engineType, FormFactor formFactor, bool spareTire);
 
 	void Beep() override;
+	void Refuel() override;
+	void StartEngine() override;
 
 
 private:
-	enum formFactor;
+	FormFactor formFactor;
 	bool spareTire;
 
 };

@@ -7,7 +7,7 @@ using enum EngineType;
 class Vehicle
 {
 public:
-	Vehicle(double gas, int wheelsAmount, enum engineType);
+	Vehicle(double gas, int wheelsAmount, EngineType engineType);
 	virtual ~Vehicle() = default;
 	
 	virtual void Beep();
@@ -17,5 +17,5 @@ public:
 private:
 	double gas;
 	int wheelsAmount;
-	enum engineType;
+	EngineType engineType;
 };
