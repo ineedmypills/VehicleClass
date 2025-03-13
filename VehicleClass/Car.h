@@ -8,6 +8,7 @@ class Car : public Vehicle
 public:
 	Car(double gas, int wheelsAmount, enum engineType, enum formFactor, bool spareTire);
 
+	void Beep() override;
 
 
 private:
