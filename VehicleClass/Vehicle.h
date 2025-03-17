@@ -1,4 +1,6 @@
-#pragma once
+#ifndef _Vehicle_
+#define _Vehicle_
+
 #include "EngineType.h"
 #include <iostream>
 #include <Windows.h>
@@ -19,3 +21,5 @@ private:
 	int wheelsAmount;
 	EngineType engineType;
 };
+
+#endif // !_Vehicle _
