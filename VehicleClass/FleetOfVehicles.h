@@ -9,11 +9,11 @@ class FleetOfVehicles
 public:
 	FleetOfVehicles();
 
-	void Fleet(const Vehicle& obj);
+	void AddVehicle( Vehicle* obj);
 	void AllBeeBeep() const;
 
 private:
-	std::vector <Vehicle> fleet;
+	std::vector <Vehicle*> fleet;
 };
 
 #endif // !_FleetOfVehicles_

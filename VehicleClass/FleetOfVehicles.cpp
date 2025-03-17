@@ -4,15 +4,15 @@ FleetOfVehicles::FleetOfVehicles()
 {
 }
 
-void FleetOfVehicles::Fleet(const Vehicle& obj)
+void FleetOfVehicles::AddVehicle(Vehicle* obj)
 {
-	fleet.push_back(obj);
+	this->fleet.push_back(obj);
 }
 
 void FleetOfVehicles::AllBeeBeep() const 
 {
-    for (const auto& i : fleet)
+    for (const auto& V  : fleet)
     {
-        i.get()->BeeBeep();
+        V->BeeBeep();
     }
 }

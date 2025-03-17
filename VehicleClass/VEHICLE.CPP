@@ -7,4 +7,8 @@ Vehicle::Vehicle(double gas, int wheelsAmount, EngineType engineType)
 	this->engineType = engineType;
 }
 
+void Vehicle::Refuel()
+{
+}
+
 
