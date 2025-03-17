@@ -13,7 +13,7 @@ Motorcycle::~Motorcycle()
 void Motorcycle::BeeBeep()
 {
 	std::cout << "Áèï :3";
-	Beep(600, 600);
+	Beep(300, 800);
 }
 
 void Motorcycle::Refuel()

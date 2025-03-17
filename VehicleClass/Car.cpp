@@ -8,7 +8,7 @@ Car::Car(double gas, int wheelsAmount, EngineType engineType, FormFactor formFac
 
 void Car::BeeBeep()
 {
-	Beep(600, 660);
+	Beep(250, 800);
 }
 
 void Car::Refuel()

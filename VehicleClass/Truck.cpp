@@ -8,7 +8,7 @@ Truck::Truck(double gas, int wheelsAmount, EngineType engineType, bool isTrailer
 
 void Truck::BeeBeep()
 {
-	Beep(600, 600);
+	Beep(200, 1000);
 }
 
 void Truck::Refuel()
