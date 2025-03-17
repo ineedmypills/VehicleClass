@@ -4,7 +4,7 @@
 class Truck : public Vehicle
 {
 public:
-	Truck(double gas, int wheelsAmount, enum engineType, bool isTypeTrailer, bool isBed);
+	Truck(double gas, int wheelsAmount, EngineType engineType, bool isTypeTrailer, bool isBed);
 
 	void Beep() override;
 	void Refuel() override;
