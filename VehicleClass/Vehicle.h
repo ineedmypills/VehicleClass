@@ -10,12 +10,12 @@ public:
 	Vehicle(double gas, int wheelsAmount, EngineType engineType);
 	virtual ~Vehicle() = default;
 	
-	virtual void Beep();
+	virtual void Beep() = 0;
 	virtual void Refuel();
-	virtual void StartEngine();
+	virtual void StartEngine() = 0;
 
 private:
-	double gas;
+	double gas = 0;
 	int wheelsAmount;
 	EngineType engineType;
 };
