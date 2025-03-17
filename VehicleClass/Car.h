@@ -1,7 +1,8 @@
-#define _CAR_
 #ifndef _CAR_
+#define _CAR_
 
 #include "Vehicle.h"
+#include "FormFactor.h"
 
 class Car : public Vehicle
 {

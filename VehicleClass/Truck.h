@@ -1,17 +1,18 @@
-#define _Truck_
 #ifndef _Truck_
+#define _Truck_
 #include "Vehicle.h"
+
 class Truck : public Vehicle
 {
 public:
-	Truck(double gas, int wheelsAmount, EngineType engineType, bool isTypeTrailer, bool isBed);
+	Truck(double gas, int wheelsAmount, EngineType engineType, bool isTrailer, bool isBed);
 
 	void Beep() override;
 	void Refuel() override;
 	void StartEngine() override;
 
 private:
-	bool isTypeTrailer;
+	bool isTrailer;
 	bool isBed;
 
 };
