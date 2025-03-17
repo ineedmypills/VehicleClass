@@ -1,4 +1,6 @@
-#pragma once
+#ifndef _Vehicle_
+#define _Vehicle_
+
 #include "EngineType.h"
 #include <iostream>
 #include <Windows.h>
@@ -10,7 +12,7 @@ public:
 	Vehicle(double gas, int wheelsAmount, EngineType engineType);
 	virtual ~Vehicle() = default;
 	
-	virtual void Beep() = 0;
+	virtual void BeeBeep() = 0;
 	virtual void Refuel();
 	virtual void StartEngine() = 0;
 
@@ -19,3 +21,5 @@ private:
 	int wheelsAmount;
 	EngineType engineType;
 };
+
+#endif // !_Vehicle _

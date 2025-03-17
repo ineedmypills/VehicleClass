@@ -6,3 +6,5 @@ Vehicle::Vehicle(double gas, int wheelsAmount, EngineType engineType)
 	this->wheelsAmount = wheelsAmount;
 	this->engineType = engineType;
 }
+
+
